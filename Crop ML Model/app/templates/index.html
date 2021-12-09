@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- core values -->
+
+		<h3 class="heading mb-sm-5 mb-4 text-center"> About Us</h3>
+		
+			<div class="heading mb-sm-5 mb-4 text-center">
+				<h3 class="mt-4">Recommend crops to be cultivated by farmers based on several parameters
+					 and fertilizers to use.</h3>
+				<p class="mt-3">Crop prediction methodology is used to predict the suitable crop by 
+					sensing various parameter of soil such as pH , Nitrogen , Phosphate , Potassium, 
+					and also parameter related to atmosphere such as sunshine hours , rainfall , temperature.</p>
+			</div>
+		</div>
+<!-- //core values -->
+
+<!-- Products & Services -->
+<section class="blog py-5">
+	<div class="container py-md-5">
+		<div class="row blog-grids">
+			<div class="col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">
+				<a href="{{ url_for('crop_recommend') }}">
+					<div class="blog-info">
+
+						<h4>Crop</h4>
+
+						<p class="mt-2"> Recommendation about the type of crops to be cultivated which is best suited
+							for the respective conditions</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">
+				<a href="{{ url_for('fertilizer_recommendation') }}">
+					<div class="blog-info">
+						<h4>Fertilizer</h4>
+						<p class="mt-2">Recommendation about the type of fertilizer best suited for the particular soil
+							and the recommended crop</p>
+					</div>
+				</a>
+			</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //Products & Services -->
+
+
+</html>
+
+{% endblock %}
